@@ -18,7 +18,6 @@ export default function App() {
             <Route path="/technology" element={<Technology />} />
           </Routes>
         </main>
-        <Footer />
       </div>
     </Router>
   );
