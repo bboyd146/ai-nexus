@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Header, Footer, ParticlesBackground, ChatWindow } from "../components";
 import useChat from "../hooks/useChat";
 import { GradientButton } from "../components"; 
 
 export default function Home() {
   const { history: messages, sendMessage, loading: isTyping } = useChat();
+  const navigate = useNavigate();
   const [input, setInput] = useState("");
 
   const onKeyDown = (e) => {
@@ -22,7 +24,6 @@ export default function Home() {
 
   return (
 <div className="font-['Space Grotesk'] text-slate-50 min-h-screen relative overflow-hidden">
-      <ParticlesBackground />
       <Header handleNewChat={handleNewChat} />
 
 <main className="container mx-auto px-6 relative z-10 backdrop-blur-[1px] bg-white/5 rounded-2xl shadow-lg">
@@ -46,11 +47,11 @@ export default function Home() {
             <div className="flex space-x-4">
               <GradientButton
                 text="Live Demo"
-                onClick={() => console.log("Demo clicked")}
+                onClick={() => navigate("/")}
               />
               <GradientButton
                 text="View Code"
-                onClick={() => console.log("View code clicked")}
+                onClick={() => window.open("https://github.com/bboyd146/ai-nexus", "_blank")}
               />
             </div>
           </div>
