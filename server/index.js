@@ -15,7 +15,7 @@ app.use(express.json());
 
 
 // 🔥 THIS IS THE MISSING PIECE
-app.use("/api", router);
+app.use("/", router);
 
 
 // Serve frontend
