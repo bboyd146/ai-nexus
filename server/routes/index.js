@@ -4,7 +4,7 @@ import apiRoutes from "./api/index.js";
 const router = Router();
 
 // Mount API routes at /api
-router.use("/api", apiRoutes);
+router.use("/", apiRoutes);
 
 // Caatch-all route for undefined endpoints
 router.use((req, res) => {
