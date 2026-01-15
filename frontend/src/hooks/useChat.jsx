@@ -2,10 +2,13 @@
 import { useState } from "react";
 import axios from "axios";
 
+
 export default function useChat() {
     const [history, setHistory] = useState([{ role: "assistant", text: "Hello! How can I assist you today?" }]);
     const [loading, setLoading] = useState(false);
 
+    const API_URL = import.meta.env.VITE_API_URL || "/api";
+    
     const sendMessage = async (message) => {
         if (!message.trim()) return;
 
@@ -14,7 +17,7 @@ export default function useChat() {
         setLoading(true);
 
         try {
-            const res = await axios.post("http://localhost:5004/api/chat", {
+            const res = await axios.post(`${API_URL}/chat`, {
                 message,
                 history: newHistory,
             });
