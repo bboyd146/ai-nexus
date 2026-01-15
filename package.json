@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix frontend\"",
     "frontend": "npm run dev --prefix frontend",
-    "build": "npm run build --prefix frontend",
+"build": "cd frontend && npm install && npm run build",
     "start": "cd server && node server.js",
     "backend": "npm run dev --prefix server",
     "install": "cd server && npm i && cd ../frontend && npm i"
