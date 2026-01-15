@@ -14,16 +14,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bboyd146/company-employee-data.git"
+    "url": "git+https://github.com/bboyd146/ai-nexus.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/bboyd146/company-employee-data/issues"
+    "url": "https://github.com/bboyd146/ai-nexus/issues"
   },
-  "homepage": "https://github.com/bboyd146/company-employee-data#readme",
+  "homepage": "https://github.com/bboyd146/ai-nexus#readme",
   "devDependencies": {
     "concurrently": "^9.2.1"
   },
