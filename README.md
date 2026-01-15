@@ -52,7 +52,7 @@ A live demo of AI Nexus can be accessed here:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/ai-nexus.git
+git clone https://github.com/bboyd146/ai-nexus.git
 cd ai-nexus
 ```
 
